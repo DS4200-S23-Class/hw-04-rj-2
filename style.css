@@ -40,7 +40,7 @@ circle {
   fill: seagreen;
 }
 
-.hover {
+circle:hover {
   fill: lightsalmon;
 }
 
