@@ -45,7 +45,7 @@ circle:hover {
 }
 
 .selected {
-  stroke-width: 5px;
+  stroke-width: 4px;
   stroke: skyblue;
 }
 

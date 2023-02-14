@@ -16,14 +16,37 @@ function pointClicked() {
   for (let i = 0; i < points.length; i++){
     points[i].addEventListener('click', function(){pointBorder(points[i])});
     points[i].addEventListener('click', function(){pointCoord(points[i])});
-
   }
 }
 
 // Add point from user input
 function addPoint() {
-    let cx = document.getElementById("cx").value;
-    let cy = document.getElementById("cy").value;
+    let choosenX = document.getElementById("cx").value;
+    let choosenY = document.getElementById("cy").value;
+    console.log(cx)
+
+    // scale the point corresponded to our frame size
+    scaledX = choosenX * 50;
+    scaledY = 500 - (choosenY * 50);
+
+    // get the frame that new point will add on
+    let graph = document.getElementById('frame')
+
+    // create a new circle element in the SVG namespace
+    let newPoint = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+
+    // set the attributes of the new element
+    newPoint.setAttribute("cx", scaledX);
+    newPoint.setAttribute("cy", scaledY); 
+    newPoint.setAttribute("r", 10); 
+
+    // display the new point on the plot
+    graph.appendChild(newPoint);
+
+    // Add point functionality
+    let pointText = "(" + choosenX + ", " + choosenY + ")"
+    newPoint.addEventListener("click", 
+      function(){pointClicked(newPoint, pointText)})
 }
 
 document.getElementById("button").addEventListener("click", addPoint);
