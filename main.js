@@ -43,8 +43,6 @@ function addPoint() {
     graph.appendChild(newPoint);
 
     // add the clicked function to the added point
-    let newCoord = "(" + choosenX + ", " + choosenY + ")"
-    let newCoord = "(" + choosenX + ", " + choosenY + ")";
     newPoint.addEventListener('click', function(){pointBorder(newPoint)});
     newPoint.addEventListener('click', function(){pointCoord(newPoint)});;
 }
