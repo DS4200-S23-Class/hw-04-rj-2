@@ -15,6 +15,7 @@ h2 {
 /* Use FlexBox to create two columns and customize */
 .container {
   display: flex;
+  flex-direction: row;
 }
 
 .left {
@@ -39,21 +40,23 @@ circle {
   fill: seagreen;
 }
 
-.point {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.highlighted {
-  fill: red;
-}
-
-circle:hover {
+.hover {
   fill: lightsalmon;
 }
 
 .selected {
   stroke-width: 5px;
   stroke: skyblue;
+}
+
+.new-point {
+  line-height: 2.0;
+}
+
+#cx {
+  width: 38ch;
+}
+
+#cy {
+  width: 38ch;
 }

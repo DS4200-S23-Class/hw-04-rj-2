@@ -20,4 +20,12 @@ function pointClicked() {
   }
 }
 
+// Add point from user input
+function addPoint() {
+    let cx = document.getElementById("cx").value;
+    let cy = document.getElementById("cy").value;
+}
+
+document.getElementById("button").addEventListener("click", addPoint);
+
 pointClicked()
