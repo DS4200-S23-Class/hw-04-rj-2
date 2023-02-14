@@ -46,7 +46,7 @@ function addPoint() {
     // add the clicked function to the added point
     let newCoord = "(" + choosenX + ", " + choosenY + ")"
     newPoint.addEventListener("click", 
-      function(){pointClicked(newPoint, newCord)})
+      function(){pointClicked(newPoint, newCoord)})
 }
 
 document.getElementById("button").addEventListener("click", addPoint);
