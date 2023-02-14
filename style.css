@@ -25,3 +25,35 @@ h2 {
   flex: 40%;
 }
 
+#frame {
+  width: 500px;
+  height: 500px;
+}
+
+line {
+  stroke: black;
+  stroke-width: 5;
+}
+
+circle {
+  fill: seagreen;
+}
+
+.point {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.highlighted {
+  fill: red;
+}
+
+circle:hover {
+  fill: lightsalmon;
+}
+
+.selected {
+  stroke-width: 5px;
+  stroke: skyblue;
+}

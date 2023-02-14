@@ -22,11 +22,26 @@
 
             <!-- create the left column with scatter plot -->
             <div class='left'>
+
+                <svg id='frame'>
+
+                    <line x1="0" y1="500" x2="500" y2="500"/>
+                    <line x1="0" y1="0" x2="0" y2="500"/>
+                    <circle id='point' cx="50" cy="400" r="10"/>
+                    <circle id='point' cx="100" cy="300" r="10"/>
+                    <circle id='point' cx="300" cy="400" r="10"/>
+                    <circle id='point' cx="450" cy="50" r="10"/>
+
+                </svg>
             
             </div>
 
             <!-- create the right column to allow user input the coordinates -->
             <div class='right'>
+
+                <div id='selected-point'>
+                    Choose a point to see the coordinates.
+                </div>
                 
             </div>
 
@@ -43,6 +58,7 @@
         <ul>
             <li><a href="https://www.w3schools.com/graphics/svg_intro.asp">SVG</a></li>
             <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a></li>
+            <li><a href="https://www.w3schools.com/jsref/met_element_getattribute.asp">getAttribute</a></li>
         </ul>
     </div>
 
