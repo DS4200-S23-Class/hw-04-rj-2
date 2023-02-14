@@ -23,7 +23,6 @@ function pointClicked() {
 function addPoint() {
     let choosenX = document.getElementById("cx").value;
     let choosenY = document.getElementById("cy").value;
-    console.log(cx)
 
     // scale the point corresponded to our frame size
     scaledX = choosenX * 50;
@@ -45,8 +44,9 @@ function addPoint() {
 
     // add the clicked function to the added point
     let newCoord = "(" + choosenX + ", " + choosenY + ")"
-    newPoint.addEventListener("click", 
-      function(){pointClicked(newPoint, newCoord)})
+    let newCoord = "(" + choosenX + ", " + choosenY + ")";
+    newPoint.addEventListener('click', function(){pointBorder(newPoint)});
+    newPoint.addEventListener('click', function(){pointCoord(newPoint)});;
 }
 
 document.getElementById("button").addEventListener("click", addPoint);
