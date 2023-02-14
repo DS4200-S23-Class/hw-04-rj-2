@@ -35,18 +35,18 @@ function addPoint() {
     // create a new circle element in the SVG namespace
     let newPoint = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
 
-    // set the attributes of the new element
+    // set the attributes of the new added point
     newPoint.setAttribute("cx", scaledX);
     newPoint.setAttribute("cy", scaledY); 
     newPoint.setAttribute("r", 10); 
 
-    // display the new point on the plot
+    // display the new point on the graph
     graph.appendChild(newPoint);
 
-    // Add point functionality
-    let pointText = "(" + choosenX + ", " + choosenY + ")"
+    // add the clicked function to the added point
+    let newCoord = "(" + choosenX + ", " + choosenY + ")"
     newPoint.addEventListener("click", 
-      function(){pointClicked(newPoint, pointText)})
+      function(){pointClicked(newPoint, newCord)})
 }
 
 document.getElementById("button").addEventListener("click", addPoint);
