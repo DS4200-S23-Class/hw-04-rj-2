@@ -44,7 +44,7 @@ function addPoint() {
     // display the new point on the graph
     graph.appendChild(newPoint);
 
-    // add the clicked function to the added point
+    // add the event to the added point if button is clicked
     newPoint.addEventListener('click', function(){pointBorder(newPoint)});
     newPoint.addEventListener('click', function(){pointCoord(newPoint)});;
 }

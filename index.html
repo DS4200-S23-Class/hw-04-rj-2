@@ -20,45 +20,43 @@
 
     <div class='container'>
 
-            <!-- create the left column with scatter plot -->
-            <div class='left'>
+        <!-- create the left column with scatter plot -->
+        <div class='left'>
 
-                <svg id='frame'>
+            <svg id='frame'>
 
-                    <!-- add the axis and line -->
-                    <line x1="0" y1="500" x2="500" y2="500"/>
-                    <line x1="0" y1="0" x2="0" y2="500"/>
-                    <circle id='point' cx="50" cy="400" r="10"/>
-                    <circle id='point' cx="100" cy="300" r="10"/>
-                    <circle id='point' cx="300" cy="400" r="10"/>
-                    <circle id='point' cx="450" cy="50" r="10"/>
+                <!-- add the axis and line -->
+                <line x1="0" y1="500" x2="500" y2="500"/>
+                <line x1="0" y1="0" x2="0" y2="500"/>
+                <circle id='point' cx="50" cy="400" r="10"/>
+                <circle id='point' cx="100" cy="300" r="10"/>
+                <circle id='point' cx="300" cy="400" r="10"/>
+                <circle id='point' cx="450" cy="50" r="10"/>
 
-                </svg>
+            </svg>
             
+        </div>
+
+        <!-- create the right column to allow user input the coordinates -->
+        <div class='right'>
+
+            <div id='selected-point'>
+                The coordinate of the clicked point is:
             </div>
 
-            <!-- create the right column to allow user input the coordinates -->
-            <div class='right'>
+            <div class='new-point'>
 
-                <div id='selected-point'>
-                    The coordinate of the clicked point is: 
-                </div>
+                <!-- asks for user inputs -->
+                <input type="number" id="cx" placeholder="Enter an x-coordinate (between 0 and 10)" min="0" max="10">
+                <br>
+                <input type="number" id="cy" placeholder="Enter a y-coordinate (between 0 and 10)" min="0" max="10">
+                <br>
 
-                <div class='new-point'>
+                <!-- button to add point -->
+                <button type="button" id ="button">Add a New Point</button>
 
-                    <!-- asks for user inputs -->
-                    <input type="number" id="cx" placeholder="Enter an x-coordinate (between 0 and 10)" min="0" max="10">
-                    <br>
-                    <input type="number" id="cy" placeholder="Enter a y-coordinate (between 0 and 10)" min="0" max="10">
-                    <br>
-
-                    <!-- button to add point -->
-                    <button type="button" id ="button">Add a New Point</button>
-
-                </div>
+            </div>
                 
-            </div>
-
         </div>
 
     </div>

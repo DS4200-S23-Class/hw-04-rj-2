@@ -2,12 +2,12 @@ body {
 	font-family: Arial;
 }
 
-/* Centered the header */
+/* Centered the h1 headers */
 h1 {
   text-align: center;
 }
 
-/* Change align of h2 headers */
+/* Centered of h2 headers */
 h2 {
 	text-align: center;
 }
@@ -27,44 +27,45 @@ h2 {
   flex: 40%;
 }
 
+/* Customerize the frame */
 #frame {
   width: 500px;
   height: 500px;
 }
 
-/*style the line*/
+/* Customerize the lines/axises */
 line {
   stroke: black;
   stroke-width: 5;
 }
 
-/*style the circle*/
+/* Customerize the circles/points */
 circle {
   fill: seagreen;
 }
 
-/*use hover to change the color of circle*/
+/* Use hover to change the color of circle */
 circle:hover {
   fill: lightsalmon;
 }
 
-/*used in the javascript to toggle the border*/
+/* A class called in the javascript to toggle the border */
 .selected {
   stroke-width: 4px;
   stroke: skyblue;
 }
 
-/*adjust the space*/
+/* Adjust the space between texts */
 .new-point {
   line-height: 2.0;
 }
 
-/*adjust the length of placeholder for x*/
+/* Adjust the length of placeholder for x */
 #cx {
   width: 38ch;
 }
 
-/*adjust the length of placeholder for y*/
+/* Adjust the length of placeholder for y */
 #cy {
   width: 38ch;
 }
