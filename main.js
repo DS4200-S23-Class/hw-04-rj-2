@@ -3,6 +3,7 @@ function pointBorder(point) {
   point.classList.toggle('selected');
 }
 
+// get the coordinate of the clicked point
 function pointCoord(point) {
   let cx = point.getAttribute('cx') / 50
   let cy = (500 - point.getAttribute('cy')) / 50
@@ -10,6 +11,7 @@ function pointCoord(point) {
   document.getElementById('selected-point').innerHTML = newText;
 }
 
+// when point clicked, get the coordinate and add the border
 function pointClicked() {
   // create border 
   let points = document.getElementsByTagName('circle');
@@ -47,6 +49,8 @@ function addPoint() {
     newPoint.addEventListener('click', function(){pointCoord(newPoint)});;
 }
 
+// add the event listener to the button
 document.getElementById("button").addEventListener("click", addPoint);
 
+// call the function
 pointClicked()

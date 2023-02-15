@@ -18,6 +18,7 @@ h2 {
   flex-direction: row;
 }
 
+
 .left {
   flex: 60%;
 }
@@ -31,32 +32,51 @@ h2 {
   height: 500px;
 }
 
+/*style the line*/
 line {
   stroke: black;
   stroke-width: 5;
 }
 
+/*style the circle*/
 circle {
   fill: seagreen;
 }
 
+/*use hover to change the color of circle*/
 circle:hover {
   fill: lightsalmon;
 }
 
+/*used in the javascript to toggle the border*/
 .selected {
   stroke-width: 4px;
   stroke: skyblue;
 }
 
+/*adjust the space*/
 .new-point {
   line-height: 2.0;
 }
 
+/*adjust the length of placeholder for x*/
 #cx {
   width: 38ch;
 }
 
+/*adjust the length of placeholder for y*/
 #cy {
   width: 38ch;
+}
+
+/* Customerize the button */
+button {
+  font-family: Arial;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  border-color: royalblue;
+  border-radius: 5px;
+  border-style: double;
+  padding: 10px;
 }
